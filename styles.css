@@ -1,0 +1,143 @@
+.container{
+    font-family:Acme, Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    overflow:auto;
+ }
+ .container .errorSec{
+     color:red;
+     font-weight:bold;
+     margin:.5rem;
+ }
+.container .modalHolder{
+    z-index:5;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.7);
+    overflow:auto;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.container .modalHolder span{
+    float:right;
+    margin-right:1rem;
+    color:#ffffff;
+    font-size:larger;
+    font-weight:bold;
+}
+.container .modalHolder span:hover{
+    cursor:pointer;
+}
+.container .modalHolder .modalContent{
+    width:80%;
+    margin:0 auto;
+    background-color:#ffffff;
+}
+.container .favList{
+    list-style-type:lower-roman;
+    color:#000090;
+}
+
+.container .favList li img{
+    vertical-align:middle;
+    width:2rem;
+}
+.container .favList li img:hover{
+    cursor: pointer;
+}
+
+h1,h2{
+    font-weight: bold;
+}
+h1{
+    font-size:1.2rem;
+    color:#FF5733;
+}
+h2{
+    font-size:1rem;
+    color:#000090;
+}
+.container .logoHolder{
+   font-size:1.2rem;
+   color:#000090;
+}
+.container .logoHolder img{
+    max-width:7rem;
+    border-radius:50%;
+    vertical-align: middle;
+}
+.container .searchPanel label{
+    min-width:10rem;
+    display:inline-block;
+}
+.container button{
+    background-color: #000090;
+    color:#ffffff;
+    font-weight:bold;
+    box-shadow:2px 2px #666666;
+    font-size:.90rem;
+    margin:.5rem;
+}
+/*
+<ul class='ulMovieDetails'>
+     <li><span class='icon'><img src="images/${iconsImg["title"]}"/></span> ${data.Title}</li>
+     <li>Year: ${data.Year}</li>
+     <li>Rated: ${data.Rated}</li>
+     <li><span class='icon'><img src="images/${iconsImg["director"]}"/></span> ${data.Director}</li>
+     <li><span class='icon'><img src="images/${iconsImg["actors"]}"/></span> ${formatActorsData(data.Actors)}</li>
+     <li><div id="actorDetails"></div></li>
+     <li><span class='icon'><img src="images/${iconsImg["revenue"]}"/></span> ${data.BoxOffice}</li>
+     <li><span class='icon'><img src="images/${iconsImg["plot"]}"/></span> ${data.Plot}</li>
+     </ul>`;
+     */
+.container .poster{
+    
+}
+.container .poster img{
+    padding:.5rem;
+    box-shadow: 3px 3px 3px 3px #666666;
+}
+.container .ulMovieDetails{
+    list-style-type: none;
+}
+.container .ulMovieDetails li{
+    margin-bottom:.5rem;
+}
+.container .ulMovieDetails li .title{
+    font-weight:bold;
+    font-size:larger;
+    color:#000090;
+}
+.container .ulMovieDetails li .money{
+    font-weight:bold;
+    color:green;
+}
+.container .ulMovieDetails .icon{
+    width:3rem;
+    display:inline-block;
+}
+
+.container .ulMovieDetails .icon img{
+    width: 3rem; 
+    vertical-align: middle;
+    margin-right:.5rem;
+}
+
+.container .ulMovieDetails li .actorDetails{
+    margin-left:1rem;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.container .ulMovieDetails li .actorDetails >div{
+    display:inline-block;
+    margin-left:.3rem;
+}
+
+.container .ulMovieDetails li .actorDetails img{
+    padding:.5rem;
+    max-width:10rem;
+    box-shadow: 3px 3px 3px 3px #666666;
+}

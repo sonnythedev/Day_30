@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movies API Exercise</title>
+   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+   <script src="api_keys.js"></script>
+   <script src="movies_api.js"></script>
+ </head>
+ <body>
+     <div id="container" class="container">
+        <div id="modalHolder" class="modalHolder">
+            <span class="modalClose" onclick="closeModal()">X</span>
+            <div id="modalContent" class="modalContent">
+            </div>
+        </div>
+        <div id="logoHolder" class="logoHolder">
+           <img src="images/popcorn_drink.png" /> Search Your Favorite Movies!
+        </div>
+        <div id="errorSec" class="errorSec">
+        </div>
+
+        <div id="searchPanel" class="searchPanel">
+            <label>Search Movie By Title:</label>
+            <input type="text" id="movie_title" class="inpSearch"/><br/>
+
+            <label>Enter Year:</label>
+            <input type="text" id="movie_year" class="inpSearch"/><br/>
+
+            <button onclick="searchMovie()">Search</button>
+        </div>
+        <div id="suggestions" class="suggestions"></div>
+        <div id="results" class="results">
+        </div>
+     </div>
+
+ </body>
+</html>
